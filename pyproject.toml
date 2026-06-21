@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backtester"
+version = "0.1.0"
+description = "Librería modular de backtesting basada en simulación de capital"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=2.0.0",
+    "pyarrow>=12.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

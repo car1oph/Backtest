@@ -1,0 +1,25 @@
+# Entornos virtuales de Python
+.venv/
+venv/
+ENV/
+
+# Archivos temporales y de empaquetado (se generan solos)
+*.egg-info/
+build/
+dist/
+__pycache__/
+*.pyc
+src/backtester/__pycache__/
+Data_Curator/__pycache__/
+
+# --- REGLAS ESPECÍFICAS DE DATOS ---
+
+# Ocultar los históricos de precios individuales de cada acción dentro del Curador
+Data_Curator/*.csv
+
+# Ocultar la carpeta de resultados generados localmente para no ensuciar el historial
+outputs/
+
+# PERMITIR explícitamente los archivos de ejemplo en la raíz
+!/portfolio_weights.csv
+!/Benchmark.csv
